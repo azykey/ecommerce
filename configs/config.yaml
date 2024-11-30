@@ -1,0 +1,29 @@
+# Configurações do Projeto ETL
+
+# Configurações de API
+api:
+  base_url: 'https://api.exemplo.com/ecommerce'
+  endpoint: '/sales'
+  timeout: 30
+
+# Configurações de Banco de Dados
+database:
+  type: 'postgresql'
+  host: 'localhost'
+  port: 5432
+  database: 'ecommerce_datawarehouse'
+  schema: 'sales_data'
+
+# Configurações de Logging
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: 'logs/etl_pipeline.log'
+
+# Configurações de Transformação
+transformation:
+  sale_categories:
+    low: [0, 50]
+    medium: [50, 200]
+    high: [200, 500]
+    premium: [500, null]

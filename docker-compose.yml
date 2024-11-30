@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  etl:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - API_BASE_URL=${API_BASE_URL}
+      - API_KEY=${API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
