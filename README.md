@@ -109,7 +109,7 @@ loader.load_to_database(transformed_data)
 
 1. **Clonar Repositório**
 ```bash
-git clone https://github.com/seu-usuario/ecommerce-etl-project.git
+git clone https://github.com/azykey/ecommerce.git
 cd ecommerce-etl-project
 ```
 
